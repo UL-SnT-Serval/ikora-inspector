@@ -1,0 +1,13 @@
+{
+  "output database": {
+    "location": "db.sqlite",
+    "driver": "sqlite"
+  },
+  "local source": {
+    "folders": [
+      "src/main/resources/project-suite/project-A",
+      "src/main/resources/project-suite/project-B",
+      "src/main/resources/project-suite/project-C"
+    ]
+  }
+}

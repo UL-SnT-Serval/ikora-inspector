@@ -45,7 +45,8 @@ public class Runner implements CommandLineRunner {
         CommandLine cmd = parser.parse(options, args);
 
         if(!cmd.hasOption("config")){
-            throw new MissingArgumentException("config");
+//            throw new MissingArgumentException("config");
+            return InspectorConfiguration.initialize("src/main/resources/config.json");
         }
 
         return InspectorConfiguration.initialize(cmd.getOptionValue("config"));

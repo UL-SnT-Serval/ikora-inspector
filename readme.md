@@ -32,14 +32,17 @@ This will run the test suite and ensure that all the requirements are met.
 #### Configuration to load project from local file system
 
     {
-        "output datase": "/path/to/output/directory/database.sqlite",
-        "local source": {
-            "folders": [
-                "/path/to/project1",
-                "/path/to/project2",
-                "/path/to/project3"
-            ]
-        }
+      "output database": {
+        "location": "path/to/db.sqlite",
+        "driver": "sqlite"
+      },
+      "local source": {
+        "folders": [
+          "src/main/resources/project-suite/project-A",
+          "src/main/resources/project-suite/project-B",
+          "src/main/resources/project-suite/project-C"
+        ]
+      }
     }
 
 where *output database* is the path to which the database should be created. The file should not exist but the directory should. 
